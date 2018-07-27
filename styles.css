@@ -1,0 +1,151 @@
+header { text-align: center;color:white;background-color:#5298DD;padding: 20px; }
+section a {
+	color:#78B1E9;
+	font-size: 30px;
+	text-decoration: none;
+	
+	
+}
+section a:hover {
+	text-decoration: none;
+}
+nav {
+	text-align: center;
+	
+}
+ul {text-decoration: none;}
+li {display: block;margin:50px;}
+nav a {
+	color: white;
+	text-decoration: none;
+	background-color: #5298DD;
+	border: thin black solid;
+	font-size: 45px;
+	padding: 20px;
+	text-shadow:2px 2px 4px #000000;
+	border-radius: 25px;
+	
+}
+nav a:hover {
+	text-decoration: none;
+	text-shadow:2px 2px 4px #000000;
+}
+
+
+h6,h5,h4,h3,h2 {
+	color: white;
+	}
+header h1 {
+	color: white;
+	text-shadow:2px 2px 4px #000000;
+}
+h1 {
+	text-shadow:2px 2px 4px #000000;
+}
+
+#hotels {
+	padding: 50px;
+	text-align: center;
+	color: white;
+	background-color: #9bc9f7;
+	
+	
+}
+#rest {
+	background-color: aliceblue;
+	color: dodgerblue;
+	padding: 50px;
+	
+	
+}
+#esst {
+	background-color: aliceblue;
+	color: dodgerblue;
+	padding: 50px;
+	
+	
+}
+#food {
+	padding: 50px;
+	text-align: center;
+	color: white;
+	background-color: #9bc9f7;
+}
+#food p {
+	color: white;
+}
+#act, #hotel_con {
+		background-color: aliceblue;
+	color: dodgerblue;
+	padding: 50px;
+}
+#directions {
+	padding: 10px;
+	text-align: center;
+	color: dodgerblue;
+	background-color: aliceblue;
+}
+#map {
+        height: 400px;
+        width: 100%;
+	border: medium solid black;
+       }
+#contact {
+	padding: 50px;
+	text-align: center;
+	color: white;
+	background-color: #9bc9f7;
+}
+#cons {
+	background-color: aliceblue;
+	color: dodgerblue;
+	padding: 20px;
+}
+
+footer {
+  background-color:#78B1E9;
+  text-align: center;
+  color: white;
+	padding: 50px;
+}
+.col-lg-4 {
+	padding-bottom: 25px;
+	border: #DCF7FC thin solid;
+}
+.col-lg-3 {
+	padding-bottom: 25px;
+	border: #DCF7FC thin solid;
+}
+.col-lg-6 {
+	padding-bottom: 25px;
+	border: #DCF7FC thin solid;
+}
+.sidenav {
+    height: 250;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   text-align: center;
+	background-color: #78B1E9;
+	color: white;
+	border: thin solid #5298DD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	padding-bottom: 60px;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#open {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+

@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-6">
+<META HTTP-EQUIV="Content-language" CONTENT="en">
+<title>CCL Guest App</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico" type="image/image.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<header>
+  <h1>Welcome To The</h1><br>
+  <h1>Guest App</h1>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/39d97n74d80/lumberton/?unit=us" data-label_1="LUMBERTON" data-label_2="WEATHER" >LUMBERTON WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h4>In Case of Emergencies<br>ONLY</h4>
+  	<h2>Dial<br>9-1-1</h2><br>
+  	<h4>General Medical Needs...</h4>
+  	<a href="http://www.atlanticareurgentcare.com/location/mount-laurel/?utm_source=GMB&utm_campaign=local-listing" target="_blank"><button type="button" class="btn btn-xl btn-danger"><i style="font-size: 55px;" class="fa fa-plus-square"></i></button></a>
+</div>
+
+<div id="open">
+  <button class="btn btn-lg btn-danger" onclick="openNav()"><i class="fa fa-hospital-o"></i> Emergency Medical Info</button>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("open").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("open").style.marginLeft= "0";
+}
+</script>
+<nav>
+ 
+  <ul>
+    <li><a class="nav-link js-scroll-trigger" href="#hotels"><i style="text-shadow:2px 2px 4px #000000;" class="fa fa-hotel"></i> Hotels</a></li>
+    <li><a class="nav-link js-scroll-trigger" href="#food"><i style="text-shadow:2px 2px 4px #000000;" class="fa fa-cutlery"></i> Food</a></li>
+    <li><a class="nav-link js-scroll-trigger" href="#directions"><i style="text-shadow:2px 2px 4px #000000;" class="fa fa-compass"></i> Map</a></li>
+    <li><a class="nav-link js-scroll-trigger" href="#contact"><i style="text-shadow:2px 2px 4px #000000;" class="fa fa-phone"></i> Contact</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#myModal">HINT</a></li>
+  </ul>
+ 
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <h2>1. Tap the phone number and your phone will start calling it.</h2>
+          <h2>2. Tap the address to bring up Google Maps</h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<main>
+<section id="hotels">
+	<h1>Hotels</h1>
+	<h5>Select From any hotel here and don't forget to ask about our corporate rates. </h5><hr>
+		<div class="container" id="hotel_con">
+			<div class="row">
+			<div class="col-lg-4">
+				<img  src="hotel_logos/westin.png"  alt="Westin Logo"/><br>
+				<a href="https://www.google.com/maps/place/555+Fellowship+Rd,+Mt+Laurel,+NJ+08054/@39.9327758,-74.962434,17z/data=!3m1!4b1!4m5!3m4!1s0x89c13529dfb0da93:0xb42ba89cf36dc944!8m2!3d39.9327717!4d-74.96024" target="blank">555 Fellowship Road North, Mt. Laurel, NJ 08054</a>
+				<h4>Corporate Rate is $149<br>(includes hot breakfast buffet)</h4>
+				<h2>856-778-7300 </h2>
+				<p class="text-muted"></p>
+   				<a href="http://www.westinmountlaurel.com" target="blank"><button type="button" class="btn btn-lg btn-info">More Info</button></a>
+	   		</div>
+	   		<div class="col-lg-4">
+	   			<img  src="hotel_logos/marriott.png"  alt="Marriot Logo"/><br>
+				<a href="https://www.google.com/maps/place/1001+Sunburst+Ln,+Mt+Laurel,+NJ+08054/@39.9675564,-74.9039845,17z/data=!3m1!4b1!4m5!3m4!1s0x89c14a75b2d3a303:0x2b223d836e5524df!8m2!3d39.9675523!4d-74.9017905" target="blank">1001 Sunburst Lane, Mt. Laurel, NJ 08054</a> 
+	  			<p class="text-muted">(along Route 38 and I-295 corridor)</p>
+		  		<h2>(856) 234-1025</h2><br>
+      		<a href="https://www.marriott.com/hotels/travel/phlrl-residence-inn-mt-laurel-at-bishops-gate/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="blank"><button type="button" class="btn btn-lg btn-info">More Info</button></a>
+       		</div>
+       		<div class="col-lg-4">
+       			<img  src="hotel_logos/doubletree.png" alt="Double tree logo"/><br>
+				<a href="https://www.google.com/maps/place/515+Fellowship+Rd,+Mt+Laurel,+NJ+08054/@39.9362376,-74.9613328,17z/data=!4m5!3m4!1s0x89c1352928e09693:0x3f4db1a60cfed6ee!8m2!3d39.9362376!4d-74.9591441" target="_blank">515 Fellowship Road, Mt. Laurel, NJ  08054</a>
+				<p class="text-muted">(includes breakfast)</p>
+				<h2>856-778-8999</h2>
+				<p class="text-muted">and mention client number <number>0560016738</number> and special rate code P43</p>
+      			<a href="https://secure3.hilton.com/en_US/dt/reservation/book.htm?execution=e1s1" target="blank"><button type="button" class="btn btn-lg btn-info">More Info</button></a>
+       		</div>
+		</div>
+		 <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+		</div>
+</section>
+	<section id="food">
+		<h1>Restaurants</h1>
+		<hr>
+		<div class="container-fluid" id="rest">
+			<div class="row">
+			  <div class="col-lg-3">
+			  <a href="http://angelospizzalarchmont.com" target="_blank"><img src="rest_logo/angelos.png" width="144" height="135" alt=""/></a>
+			  	<h2>Angelo's Pizzeria Larchmont</h2>
+  					<a href="https://www.google.com/maps/place/200+Larchmont+Blvd,+Mt+Laurel,+NJ+08054/@39.9527604,-74.8729179,17z/data=!3m1!4b1!4m5!3m4!1s0x89c13606517f92d3:0x9a8165a510a898f4!8m2!3d39.9527563!4d-74.8707239" target="_blank">200 Larchmont Blvd, Mt Laurel, NJ 08054</a>
+			  		<h2>(856) 231-8777</h2>
+			  </div>
+			  <div class="col-lg-3">
+			  <a href="https://www.thecapitalgrille.com/home" target="_blank"><img src="rest_logo/capitalgrille.png" width="144" height="67" alt=""/></a>
+			  <h2>The Capital Grille</h2>
+				<a href="https://www.google.com/maps/place/2000+NJ-38,+Cherry+Hill,+NJ+08002/data=!4m2!3m1!1s0x89c6cbb2c790c6f1:0xe152dd805050aea9?sa=X&ved=0ahUKEwj8ybDh1dHbAhUJQ6wKHVfiAsYQ8gEIJjAA" target="_blank">2000 New Jersey 38, Cherry Hill, NJ 08002</a>
+			  		<h2>(856) 665-5252</h2><br>
+		  		<a href="https://www.thecapitalgrille.com/menu-listing/dinner" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  		<a href="https://www.thecapitalgrille.com/reservations" target="blank"><button type="button" class="btn btn-info">Reservations</button></a>
+			  		
+			  </div>
+			  <div class="col-lg-3">
+			  <a href="https://firebirdsrestaurants.com" target="_blank"><img src="rest_logo/firebirds.png" width="192" height="41" alt=""/></a>
+			  	<h2>Firebirds Wood Fired Grill</h2>
+  				<a href="https://www.google.com/maps/place/400+NJ-38,+Moorestown,+NJ+08057/data=!4m2!3m1!1s0x89c13531adef512b:0x9d8ffefa5b01a1e7?sa=X&ved=0ahUKEwiHuIWCtM_bAhVEt1MKHfH2CQUQ8gEIJjAA" target="_blank">400 NJ-38, Moorestown, NJ 08057</a>
+					<h4>Closes at 10pm</h4>
+					<h2>(856) 380-0604</h2> 
+					<a href="https://moorestown.firebirdsrestaurants.com/menus/dinner/" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  </div>
+			  <div class="col-lg-3">
+			  <a href="http://ita101.com" target="_blank"><img src="rest_logo/ita101.png" width="192" height="176" alt=""/></a>
+			  	<h2>ITA101</h2>
+  				<a href="https://www.google.com/maps/place/20+S+Main+St,+Medford,+NJ+08055/@39.8990035,-74.8260509,17z/data=!3m1!4b1!4m5!3m4!1s0x89c1371e8461b42b:0x5cc5be45bd0ba1db!8m2!3d39.8989994!4d-74.8238569" target="_blank">20 S Main St, Medford, NJ 08055</a>
+					<h2>(609) 654-0101</h2> 
+					<a href="https://www.opentable.com/ita-101?ref=1068&page=1" target="blank"><button type="button" class="btn btn-info">Reservations</button></a>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-3">
+			  	<a href="http://mtlaurel.lascalaspronto.com" target="_blank"><img src="rest_logo/pronto.png" alt=""/></a>
+			  	<h2>LaScala's Pronto</h2>
+  					<a href="https://www.google.com/maps/place/4040+Dearborn+Cir,+Mt+Laurel,+NJ+08054/@39.9700965,-74.9031293,17z/data=!3m1!4b1!4m5!3m4!1s0x89c14a7386f3884b:0x66fe3c7a4bcc1154!8m2!3d39.9700965!4d-74.9009406" target="_blank">4040 Dearborn Cir, Mt Laurel, NJ 08054</a>
+			  		<h2>(856) 234-5400</h2><br>
+			  		<a href="http://mtlaurel.lascalaspronto.com/our-menu/" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  </div>
+			  <div class="col-lg-3">
+			  	<a href="https://www.pfchangs.com/locations/us/nj/marlton/500-route-73-south/9905-marlton.html?utm_source=YextMain&utm_medium=Directory" target="_blank"><img src="rest_logo/pfchangs.png" width="180" height="34" alt=""/></a>
+			  	<h2>P.F. Chang's</h2>
+  					<a href="https://www.google.com/maps/place/500+NJ-73+Spc+G1,+Marlton,+NJ+08053/@39.900222,-74.9338946,17z/data=!3m1!4b1!4m5!3m4!1s0x89c1348fc4998b3f:0x58a1fb4094635a29!8m2!3d39.9002179!4d-74.9317006" target="_blank">500 Route 73 South, Spc G1, Marlton, NJ 080532</a>
+			  		<h2>(856) 396-0818</h2><br>
+			  		<a href="https://www.pfchangs.com/menu?storeid=9905?utm_source=YextMenu&utm_medium=Directory" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  		<a href="https://www.pfchangs.com/reservations?storeid=9905?utm_source=YextReservations&utm_medium=Directory" target="blank"><button type="button" class="btn btn-info">Reservations</button></a>
+			  		
+			  </div>
+			  <div class="col-lg-3">
+		  			<a href="http://www.prospectorsrestaurant.com" target="_blank"><img src="rest_logo/prospectors.png" width="150" height="146" alt=""/></a>
+			  		<h2>Prospector's Grille & Saloon</h2>
+  					<a href="https://www.google.com/maps/place/3050+NJ-38,+Mt+Laurel,+NJ+08054/@39.9698604,-74.8729179,17z/data=!3m1!4b1!4m5!3m4!1s0x89c149f9c96451eb:0xb8856d5f09a2a15!8m2!3d39.9698563!4d-74.8707239" target="_blank">3050 NJ-38, Mt Laurel, NJ 08054</a>
+					<h2>(856) 235-1121</h2>
+					<a href="http://www.prospectorsrestaurant.com/lunch-and-dinner-menu" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  </div>
+			  <div class="col-lg-3">
+			  	<a href="http://www.rubytuesday.com" target="_blank"><img src="rest_logo/rudytuesday_logo.png" width="202" height="28" alt=""/></a>
+			  	<h2>Ruby Tuesdays</h2>
+  					<a href="https://www.google.com/maps/place/4011+Dearborn+Cir,+Mt+Laurel,+NJ+08054/@39.9691897,-74.9030808,17z/data=!3m1!4b1!4m5!3m4!1s0x89c14a7464c6e7fd:0x581b63d69cf03a8b!8m2!3d39.9691856!4d-74.9008868" target="_blank">
+  					4011 Dearborn Cir, Mt Laurel, NJ 08054</a>
+					<h2>(856) 439-0042</h2> 
+					<a href="http://www.rubytuesday.com/menu" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-lg-6">
+		  			<a href="http://tresyanandwu.com" target="_blank"><img src="rest_logo/tyw.png" width="300" height="120" alt=""/></a>
+			  		<h2>Très Yan & Wu</h2>
+  					<a href="https://www.google.com/maps/place/3131+NJ-38,+Mt+Laurel,+NJ+08054/@39.9709105,-74.8822828,17z/data=!3m1!4b1!4m5!3m4!1s0x89c14a035ee66a15:0x180cabd7fe76fefd!8m2!3d39.9709064!4d-74.8800888" target="_blank">
+  					3131 NJ-38, Mt Laurel, NJ 08054</a>
+  					<h4>Open until 11pm on Friday and Saturday's</h4>
+  					<h4>BYOB</h4>
+			  		<h2>(856) 608-8888</h2>
+           			<a href="http://tresyanandwu.com/menu" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+           			
+			  </div>
+			    <div class="col-lg-6">
+			    	<a href="https://www.yardhouse.com/locations/nj/moorestown/moorestown-moorestown-mall/8364" target="_blank"><img src="rest_logo/yardhouse.png" width="144" height="56" alt=""/></a>
+		  			<h2>Yard House</h2>
+  					<a href="https://www.google.com/maps/place/400+NJ-38+%231570,+Moorestown,+NJ+08057/@39.9444026,-74.966631,17z/data=!3m1!4b1!4m5!3m4!1s0x89c135316609932b:0xf80a99fc971babe0!8m2!3d39.9443985!4d-74.9644423" target="_blank">400 New Jersey 38 #1570, Moorestown, NJ 08057</a>
+			  		<h2>(856) 722-5620</h2>
+          			<a href="https://www.yardhouse.com/menu-listing/eat" target="blank"><button type="button" class="btn btn-info">Menu</button></a>
+          			<a href="https://www.yardhouse.com/private-dining/home" target="blank"><button type="button" class="btn btn-info">Reservations</button></a>
+			  	</div>
+			</div>
+			 <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+			 <h1>Essentials:</h1>
+			 <hr>
+	  <div class="container" id="esst">
+			
+		  <div class="row">
+		  	
+			  <div  class="col-lg-4">
+			  <i class="fa fa-shopping-basket" style="font-size:40px;"></i>
+			  	<h2>Wegmans Market</h2>
+			  	<a href="https://www.google.com/maps/place/2+Centerton+Rd,+Mt+Laurel,+NJ+08054/@39.9676414,-74.9181713,17z/data=!3m1!4b1!4m5!3m4!1s0x89c14a7f42aec571:0xaf8ecec9ea1f3c19!8m2!3d39.9676373!4d-74.9159826" target="_blank">2 Centerton Road, Mt. Laurel, NJ 08054</a>
+				<h4>Pharmacy Hours Until 9pm Weekdays</h4>
+				<h4>6am to midnight, 7 days a week </h4>
+			  	<h2>(856)-439-7300</h2>
+          		<a href="https://www.wegmans.com/stores/mt-laurel-nj.html?utm_source=G&utm_medium=local&utm_campaign=google-local" target="blank"><button type="button" class="btn btn-info">More Info</button></a> | 
+         		<a href="https://www.wegmans.com/content/dam/wegmans/pdf/store-maps/wegmans-mt-laurel-8-store-map.pdf" target="blank"><button type="button" class="btn btn-info">Store Map</button></a>
+          		</div>
+			  <div   class="col-lg-4">
+			  <i class="fa fa-shopping-basket" style="font-size:40px;"></i>
+			  	<h2>ShopRite</h2>
+			  	<a href="https://www.google.com/maps/place/127+Ark+Rd,+Mt+Laurel,+NJ+08054/@39.9732342,-74.8725608,17z/data=!3m1!4b1!4m5!3m4!1s0x89c149f71cf31c03:0x670d232f41e20b16!8m2!3d39.9732342!4d-74.8703721" target="_blank">127 Ark Rd, Mt Laurel, NJ 08054</a>
+			  	<h2>(856) 359-2180</h2>
+          		<a href="https://www.shoprite.com" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+          		</div>
+			  <div class="col-lg-4">
+			  <i class="fa fa-medkit" style="font-size:40px;"></i>
+			  	<h2>CVS Pharmacy</h2>
+			  	<a href="https://www.google.com/maps/place/3110+NJ-38,+Mt+Laurel,+NJ+08054/@39.9702009,-74.8754709,17z/data=!3m1!4b1!4m5!3m4!1s0x89c149f81276be9b:0x3e6285863f7019d5!8m2!3d39.9701968!4d-74.8732822" target="_blank">3110 NJ-38, Mt Laurel, NJ 08054</a>
+				<h5>Open 24 Hours including Pharmacy Department</h5>
+			  	<h2>(856) 235-7126</h2>
+          		<a href="https://www.cvs.com/store-locator/cvs-pharmacy-address/3110+Route+38-Mount+Laurel-NJ-08054/storeid=668?WT.mc_id=LS_GOOGLE_FS_668" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+          		</div>
+		  </div>
+	    <hr>
+		    <div class="row">
+		  	
+			  <div  class="col-lg-4">
+			  <i class="fa fa-plane" style="font-size:40px;"></i>
+			  	<h2>Philadelphia Airport</h2>
+			  	<a href="https://www.google.com/maps/place/8000+Essington+Ave,+Philadelphia,+PA+19153/@39.8957333,-75.230617,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c466468f7075:0x3b75bf4cf152e550!8m2!3d39.8957292!4d-75.2284283" target="_blank">8000 Essington Ave, Philadelphia, PA 19153</a>
+				<h5>Code: PHL</h5>
+			  	<h2>(215) 937-6937</h2>
+          		<a href="http://www.phl.org" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+          		</div>
+			  <div   class="col-lg-4">
+			  	<i class="fa fa-automobile" style="font-size:40px;"></i><br>
+				<h2>CITYCAR Car Service</h2>
+			  	<a href="rates.pdf" target="blank" class="btn btn-info btn-xl sr-button"><i class="fa fa-dollar"></i> RATES</a>
+			  	<a href="additional_info.pdf" target="blank" class="btn btn-info btn-xl sr-button"><i class="fa fa-dollar"></i> Additional Info</a>
+			  	<h2>1-800-322-8007</h2>
+      		  <h4>Reservations Via E-mail</h4>
+      		  <a href="mailto:reservations@citycarservices.com" target="blank" class="btn btn-info btn-xl"><i style="font-size: 45px;" class="fa fa-envelope-o"></i></a>
+       		  </div>
+			  <div class="col-lg-4">
+				  <i class="fa fa-laptop" style="font-size:40px;"></i>
+				  <h2>Best Buy</h2>
+				  <h2>Technology Store</h2>
+				  <a href="https://www.google.com/maps/place/1420+Nixon+Dr,+Moorestown,+NJ+08057/data=!4m2!3m1!1s0x89c1352fb0bb8f79:0xaa6d01926a260053?sa=X&ved=0ahUKEwi988XRsdTbAhVus1kKHRkKDzMQ8gEIJjAA" target="_blank">1420 Nixon Dr, Mt Laurel, NJ 08054</a>
+					<h5>Closes at 10pm</h5>
+					<h2>(856) 608-1600</h2>
+          		</div>
+		  </div>
+		   <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+		</div>
+     	<h1>Activities</h1>
+     	<hr>
+      	<div class="container" id="act">
+      	
+   		  <div class="row">
+      		  <div class="col-lg-6">
+				  <a href="https://www.nhl.com/flyers/tickets" target="_blank"><img src="activities_logos/flyers.png" alt="Flyers Logo"/></a>
+				  <h5>Philadelphia Flyers</h5>
+					<h6>Wells Fargo Center Philadelphia</h6>
+					<a href="https://www.google.com/maps/place/3601+S+Broad+St,+Philadelphia,+PA+19148/@39.901184,-75.1741603,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c5eb5f999399:0xd7825a05c8a19699!8m2!3d39.9011799!4d-75.1719716" target="_blank">3601 S Broad St, Philadelphia, PA 19148</a>
+				  <h4>(215) 336-3600</h4>
+				  <a href="https://www.wellsfargocenterphilly.com/teams/detail/philadelphia-flyers" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+   		  	  </div>
+      		  <div class="col-lg-6">
+      		  		<a href="https://www.mlb.com/phillies/tickets" target="_blank"><img src="activities_logos/phillies.png" alt="Flyers Logo"/></a>
+				  <h5>Philadelphia Phillies</h5>
+					<h6>Citizens Bank Park</h6>
+					<a href="https://www.google.com/maps/place/1+Citizens+Bank+Way,+Philadelphia,+PA+19148/@39.9059929,-75.1688341,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c5ee1883b8ad:0x970db65b9075bfe8!8m2!3d39.9059929!4d-75.1666401" target="_blank">1 Citizens Bank Way, Philadelphia, PA 19148</a>
+				  <h4>(215) 463-1000</h4>
+				  <a href="https://www.mlb.com/phillies/ballpark" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+      		  </div>
+   		  </div>
+   		  <div class="row">
+   		  	  <div class="col-lg-6">
+      		  	    <i class="fa fa-shopping-cart" style="font-size:78px;color:#5298DD;"></i>
+      		  	    <h3>Moorestown Mall</h3>
+      		  	    <a href="https://www.google.com/maps/place/400+NJ-38,+Moorestown,+NJ+08057/@39.9440707,-74.9629165,17z/data=!3m1!4b1!4m5!3m4!1s0x89c13531adef512b:0x9d8ffefa5b01a1e7!8m2!3d39.9440707!4d-74.9607225" target="_blank">400 NJ-38, Moorestown, NJ 08057</a>
+				    <h4>(856) 231-4444</h4>
+				    <a href="https://moorestown-mall.com" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+     		  </div>
+      		  <div class="col-lg-6">
+      		  	<i class="fa fa-shopping-cart" style="font-size:78px;color:#5298DD;"></i>
+      		  	   <h3>Cherry Hill Mall Mall</h3>
+     		  		<a href="https://www.google.com/maps/place/2000+NJ-38,+Cherry+Hill,+NJ+08002/@39.94086,-75.0278956,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6cbb2c790c6f1:0xe152dd805050aea9!8m2!3d39.94086!4d-75.0257016" target="_blank">2000 NJ-38, Cherry Hill, NJ 08002</a>
+				    <h4>(856) 662-7440</h4>
+				    <a href="https://cherryhillmall.com" target="blank"><button type="button" class="btn btn-info">More Info</button></a>
+      		  </div>
+   		  </div>
+   		   <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+        </div>
+  </section>
+	<section id="directions">
+<h1>Directions</h1>
+		<div class="container">
+				
+				<div id="floating-panel">
+    				<b>Start: </b>
+    			<select id="start">
+    			  <option value="555 Fellowship Road North, Mt. Laurel, NJ 08054">Your Hotel</option>
+				  <option value="92 Ark Rd, Lumberton, NJ 08048">Random Location</option>
+				  <option value="8000 Essington Ave, Philadelphia, PA 19153">Philly Airport</option>
+    			</select>
+    				<b>End: </b>
+    			<select id="end">
+					<option value="92 Ark Rd, Lumberton, NJ 08048">Random Location</option>
+					<option value="555 Fellowship Road North, Mt. Laurel, NJ 08054">Your Hotel</option>
+					<option value="104 N Gold Dr, Trenton, NJ 08691">Random Location</option>
+					<option value="8000 Essington Ave, Philadelphia, PA 19153">Philly Airport</option>
+					<option value="1 Citizens Bank Way, Philadelphia, PA 19148">Phillies Stadium</option>
+					<option value="390 New Albany Rd, Moorestown, NJ 08057">Tubedec</option>
+					<option value="2000 NJ-38, Cherry Hill, NJ 08002">Cherry Hill Mall</option>
+					<option value="400 NJ-38, Moorestown, NJ 08057">Moorestown Mall</option>
+				</select>
+    		</div>
+    <div id="map"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+<script>
+		
+      function initMap() {
+        var markerArray = [];
+
+        // Instantiate a directions service.
+        var directionsService = new google.maps.DirectionsService;
+
+        // Create a map and center it on Manhattan.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 40.771, lng: -73.974}
+        });
+
+        // Create a renderer for directions and bind it to the map.
+        var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+
+        // Instantiate an info window to hold step text.
+        var stepDisplay = new google.maps.InfoWindow;
+
+        // Display the route between the initial start and end selections.
+        calculateAndDisplayRoute(
+            directionsDisplay, directionsService, markerArray, stepDisplay, map);
+        // Listen to change events from the start and end lists.
+        var onChangeHandler = function() {
+          calculateAndDisplayRoute(
+              directionsDisplay, directionsService, markerArray, stepDisplay, map);
+        };
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
+      }
+
+      function calculateAndDisplayRoute(directionsDisplay, directionsService,
+          markerArray, stepDisplay, map) {
+        // First, remove any existing markers from the map.
+        for (var i = 0; i < markerArray.length; i++) {
+          markerArray[i].setMap(null);
+        }
+
+        // Retrieve the start and end locations and create a DirectionsRequest using
+        // WALKING directions.
+        directionsService.route({
+          origin: document.getElementById('start').value,
+          destination: document.getElementById('end').value,
+          travelMode: 'WALKING'
+        }, function(response, status) {
+          // Route the directions and pass the response to a function to create
+          // markers for each step.
+          if (status === 'OK') {
+            document.getElementById('warnings-panel').innerHTML =
+                '<b>' + response.routes[0].warnings + '</b>';
+            directionsDisplay.setDirections(response);
+            showSteps(response, markerArray, stepDisplay, map);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
+      function showSteps(directionResult, markerArray, stepDisplay, map) {
+        // For each step, place a marker, and add the text to the marker's infowindow.
+        // Also attach the marker to an array so we can keep track of it and remove it
+        // when calculating new routes.
+        var myRoute = directionResult.routes[0].legs[0];
+        for (var i = 0; i < myRoute.steps.length; i++) {
+          var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
+          marker.setMap(map);
+          marker.setPosition(myRoute.steps[i].start_location);
+          attachInstructionText(
+              stepDisplay, marker, myRoute.steps[i].instructions, map);
+        }
+      }
+
+      function attachInstructionText(stepDisplay, marker, text, map) {
+        google.maps.event.addListener(marker, 'click', function() {
+          // Open an info window when the marker is clicked on, containing the text
+          // of the step.
+          stepDisplay.setContent(text);
+          stepDisplay.open(map, marker);
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_pTRP2ZrvJsyyDmn5pdnA1Jx7WMy3Mq8&callback=initMap">
+		
+    </script>
+	  <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+		</div>
+			 
+	</section>
+  <section id="contact">
+  <h1>Important Contacts</h1>
+  <hr>
+	<div class="container" id="cons">
+  <a href="#" target="_blank"><img src="image.png" width="147" height="64" alt="Random Image"/> </a>
+	  <div class="row">
+		  <div class="col-lg-4">
+	  	  <h4>XXXXXXXXXX</h4>
+			<a href="https://www.google.com/maps/place/92+Ark+Rd,+Lumberton,+NJ+08048/data=!4m2!3m1!1s0x89c1363fff278d8f:0x3920c46c0ad6105b?sa=X&ved=0ahUKEwji_L2oz7vbAhWFtVkKHRspA6wQ8gEIJjAA" target="_blank">123 Fake St.</a>
+	  	  <h4>(555)555-5555</h4>
+	  	  </div>
+		   <div class="col-lg-4">
+	    	<h4>XXXXXXXXXX</h4>
+	    	<a href="https://www.google.com/maps/place/104+N+Gold+Dr,+Robbinsville,+NJ+08691/@40.208299,-74.6278668,17z/data=!3m1!4b1!4m5!3m4!1s0x89c15e4d2b6e76e7:0xbfb4cca3f8a1a37b!8m2!3d40.2082949!4d-74.6256781" target="_blank">123 Fake St.</a>
+	    	<h2>(555)555-5555</h2>
+	    </div>
+		  <div class="col-lg-4">
+	    	<h2>XXXXXXXXXX</h2>
+	    	<a href="https://www.google.com/maps/place/390+New+Albany+Rd,+Moorestown,+NJ+08057/@39.9695046,-74.9706173,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6caab52a722e7:0x293f4f5926d04205!8m2!3d39.9695005!4d-74.9684286" target="_blank">123 Fake St.</a>
+	    	<h2>(555)555-5555</h2>
+	    </div>
+	  </div>
+      <div class="row">
+        <div class="col-lg-6">
+        	<h4>XX XXX XXXX</h4>
+        	<a href="https://www.google.com/maps/place/120+Stockton+St,+Hightstown,+NJ+08520/data=!4m2!3m1!1s0x89c3df1f5b628007:0xa98cbb8da2943781?sa=X&ved=0ahUKEwimq6qtttTbAhWBtVkKHenOAHwQ8gEIJjAA" target="_blank">123 Fake St.</a>
+        	<h2>(609) 443-3700</h2>
+        </div>
+        <div class="col-lg-6">
+        	<h4>XXXXXXXXXX</h4>
+        </div>
+      </div>
+<h3>For guests planning on a facility tour, closed toe shoes are required.</h3>
+      <h3>this campus is a smoke-free facility.</h3>
+       <a class="nav-link js-scroll-trigger" href="index.html"><button type="button" class="btn btn-block btn-info">Top</button></a>
+    </div>
+	</section>
+</main>
+<footer>
+<p>Thank you for using our App.</p>
+Copyright &copy; 2018 &middot; All Rights Reserved &middot; 
+</footer>
+   <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="../js/bootstrap-3.3.7.js"></script>
+    
+    <!--Modal JS file (local)-->
+    <script src="../js/modal.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+</body>
+</html>
